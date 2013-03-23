@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.0'
+version = '0.1'
 
 long_description = (
     open('README.txt').read()
@@ -18,6 +18,10 @@ requires = [
     "pyramid",
     "pytest",
 ]
+
+tests_require = [
+]
+
 
 setup(name='rebecca.testing',
       version=version,
@@ -43,6 +47,10 @@ setup(name='rebecca.testing',
       include_package_data=True,
       zip_safe=False,
       install_requires=requires,
+      tests_require=tests_require,
+      extras_require={
+          "testing": tests_require,
+      },
       entry_points="""
       # -*- Entry points: -*-
       """,
