@@ -14,6 +14,11 @@ long_description = (
     open('CHANGES.txt').read()
     + '\n')
 
+requires = [
+    "pyramid",
+    "pytest",
+]
+
 setup(name='rebecca.testing',
       version=version,
       description="",
@@ -33,10 +38,7 @@ setup(name='rebecca.testing',
       namespace_packages=['rebecca'],
       include_package_data=True,
       zip_safe=False,
-      install_requires=[
-          'setuptools',
-          # -*- Extra requirements: -*-
-      ],
+      install_requires=requires,
       entry_points="""
       # -*- Entry points: -*-
       """,
