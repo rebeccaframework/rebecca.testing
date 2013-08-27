@@ -1,5 +1,8 @@
 .. contents::
 
+.. image:: https://travis-ci.org/rebeccaframework/rebecca.testing.png?branch=master
+   :target: https://travis-ci.org/rebeccaframework/rebecca.testing
+
 Getting Started
 ===================
 
